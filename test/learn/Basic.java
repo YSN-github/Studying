@@ -2,10 +2,10 @@ package learn;
 
 public class Basic{
     public static void main(String args[]){//UTF-8
-    System.out.println("paiza等で学習する上でよく使う基本構文");
+    System.out.println("学習する上でよく使う基本構文");
 
     line("文字の表示");
-    System.out.println("Hallo world");
+    System.out.println("Hello world");
     end();
 
     line("変数作成");
@@ -29,7 +29,7 @@ public class Basic{
     d[0][1]=20;
     d[1][0]=30;
     d[1][1]=40;
-    System.out.println("d="+(d[0][0]+d[1][1]));
+    System.out.println("d="+d[0][0]+","+d[1][1]);
     line("二次元配列（データ指定）");
     int e[][] = {{2,4},{6,8},{10}};
     System.out.println("e="+(e[0][1]+e[2][0]));
@@ -46,56 +46,78 @@ public class Basic{
     System.out.println("f%4→"+(f%=4));
     end();
 
+    line("シフト演算子(要再学習)");
     int g =30;
     System.out.print("g=");
     System.out.println(g<<2);
     System.out.print("g2=");
     System.out.println(g>>2);
+    end();
 
+    line("簡易条件式(要再学習)");
     int h= 5, i= 15;
     System.out.println( (h < 10) ? ("h<10") : ("h>=10"));
     System.out.println( (i < 10) ? ("i<10") : ("i>=10"));
+    end();
 
+    line("繰り返し");
     for(int j=1;j<=3;j++){
-      System.out.println("j"+j+" number="+j);
+      System.out.println("j="+j);
     }
+    int j2=0;
+    while(j2==2) {
+    	System.out.println("j2="+j2);
+    	j2++;
+    }
+    end();
 
+    line("条件式");
     int k =1;
     System.out.println("k=ここから");
-    switch (k){case 0:System.out.println("  a");
-               case 1:System.out.println("  b");
-               case 2:System.out.println("  c");
+    switch (k){case 0:System.out.println("a");
                break;
-               default :System.out.println("  d");
+               case 1:System.out.println("b");
+               break;
+               case 2:System.out.println("c");
+               break;
+               default :System.out.println("d");
                }
-    System.out.println("k=ここまで");
+    if(k<5)System.out.println("kは5より小さい");
+    else System.out.println("kは5以上");
+    end();
 
-    //class//
+    line("メソッド");
            int l = 10,m = 20;
 
           System.out.println(" int l = " + l);
           System.out.println(" int m = " + m);
           System.out.println("----------------------");
 
-          Basic.test(l,m);//クラス.メソッド名//
-          LearnString.main(args);//別ファイルも可【staticがある場合はこれだけでいい】//
-          LearnInt test3 = new LearnInt();//無い場合はクラス 好きな名 = new クラス//
-          test3.main();//好きな名で作ったオブジェクト　実行したいメソッド
+          Basic.test(l,m);//クラス.メソッド名
+
+          //※その他(他クラスから呼び出し)
+          //LearnString.main(args);//【staticの場合はインスタンス不要】
+
+          //LearnInt test3 = new LearnInt();//無い場合は クラス 好きな変数名 = new クラス
+          //test3.main();//好きな名で作ったオブジェクト 実行したいメソッド
+          end();
 
      }
 
 
     static void test(int n,int o){
-    	//a受け取ったものをローカルの変数に当てはめる//
+    	//受け取ったものをローカルの変数に当てはめる
 
        System.out.println(" int l = " + n);
        System.out.println(" int m = " + o);
     }
+
     static void line(String a) {
     	System.out.println("");
     	System.out.println(a);
     	System.out.println("");
     }
+
     static void end() {
     	System.out.println("");
     	System.out.println("------------------------------------------");
