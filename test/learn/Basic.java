@@ -2,6 +2,7 @@ package learn;
 
 public class Basic{
     public static void main(String args[]){//UTF-8
+    System.out.println("paiza等で学習する上でよく使う基本構文");
 
     line("文字の表示");
     System.out.println("Hallo world");
@@ -15,11 +16,11 @@ public class Basic{
     end();
 
     line("配列");
-    int c[]=new int [5];
+    int c[]=new int [3];
     c[0]=10;
     c[1]=20;
     c[2]=30;
-    System.out.println("c="+(c[0]+c[1]+c[2]));
+    System.out.println("c="+c[0]+","+c[1]+","+c[2]);
     end();
 
     line("二次元配列(長さ指定)");
@@ -91,13 +92,12 @@ public class Basic{
        System.out.println(" int m = " + o);
     }
     static void line(String a) {
-    	System.out.println("------------------------------------------");
-    	System.out.println("a");
+    	System.out.println("");
+    	System.out.println(a);
     	System.out.println("");
     }
     static void end() {
     	System.out.println("");
-    	System.out.println("a");
     	System.out.println("------------------------------------------");
     }
 }
