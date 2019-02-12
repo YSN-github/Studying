@@ -1,6 +1,6 @@
-package helloworld;
+package learn;
 
-public class Test4 {
+public class LearnClass {
 
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ

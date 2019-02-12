@@ -1,6 +1,6 @@
-package helloworld;
+package learn;
 
-public class Test2 {
+public class LearnString {
 
 	public static void main(String[] args) {
 	

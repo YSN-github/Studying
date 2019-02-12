@@ -1,19 +1,22 @@
 package all_exe;
-import helloworld.*;
-import algorithm.*;
+import algorithm.Bobble;
+import learn.Basic;
+import learn.LearnString;
+import learn.LearnInt;
+import learn.LearnClass;
 
 
 public class All_exe {
 
 	public static void main(String[] args) {
-		Test.main(args);
+		Basic.main(args);
 		System.out.println("Test,ここまで--------------------------------------------------------------------------");
-		Test2.main(args);
+		LearnString.main(args);
 		System.out.println("Test2,ここまで-----------------------------------------------------------------------");
-		Test3 test3=new Test3();
+		LearnInt test3=new LearnInt();
 		test3.main();
 		System.out.println("Test3,ここまで----------------------------------------------------------------------");
-		Test4.main(args);
+		LearnClass.main(args);
 		System.out.println("Test4,ここまで------------------------------------------------------------------");
 		
 		Bobble.main(args);
