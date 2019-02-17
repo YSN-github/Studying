@@ -46,20 +46,6 @@ public class Basic{
     System.out.println("f%4→"+(f%=4));
     end();
 
-    line("シフト演算子(要再学習)");
-    int g =30;
-    System.out.print("g=");
-    System.out.println(g<<2);
-    System.out.print("g2=");
-    System.out.println(g>>2);
-    end();
-
-    line("簡易条件式(要再学習)");
-    int h= 5, i= 15;
-    System.out.println( (h < 10) ? ("h<10") : ("h>=10"));
-    System.out.println( (i < 10) ? ("i<10") : ("i>=10"));
-    end();
-
     line("繰り返し");
     for(int j=1;j<=3;j++){
       System.out.println("j="+j);
@@ -95,11 +81,11 @@ public class Basic{
 
           Basic.test(l,m);//クラス.メソッド名
 
-          //※その他(他クラスから呼び出し)
-          //LearnString.main(args);//【staticの場合はインスタンス不要】
+          //その他(他クラスから呼び出し)
+          //例：LearnString.main(args);【staticの場合はインスタンス不要】
 
-          //LearnInt test3 = new LearnInt();//無い場合は クラス 好きな変数名 = new クラス
-          //test3.main();//好きな名で作ったオブジェクト 実行したいメソッド
+          //LearnInt test3 = new LearnInt();//static無しの場合は 【クラス 好きな変数名 = new クラス】
+          //test3.main();//上で生成したオブジェクト名.実行したいメソッド
           end();
 
      }
