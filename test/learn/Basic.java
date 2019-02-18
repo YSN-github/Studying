@@ -80,12 +80,6 @@ public class Basic{
           System.out.println("----------------------");
 
           Basic.test(l,m);//クラス.メソッド名
-
-          //その他(他クラスから呼び出し)
-          //例：LearnString.main(args);【staticの場合はインスタンス不要】
-
-          //LearnInt test3 = new LearnInt();//static無しの場合は 【クラス 好きな変数名 = new クラス】
-          //test3.main();//上で生成したオブジェクト名.実行したいメソッド
           end();
 
      }

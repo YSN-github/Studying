@@ -1,7 +1,7 @@
 package all_exe;
 import algorithm.Bobble;
 import learn.Basic;
-import learn.LearnClass;
+import learn.LearnClassAndMethod;
 import learn.LearnInt;
 import learn.LearnString;
 
@@ -20,7 +20,7 @@ public class All_exe {
 		test3.main();
 		System.out.println("Test3,ここまで----------------------------------------------------------------------");
 
-		LearnClass.main(args);
+		LearnClassAndMethod.main(args);
 		System.out.println("Test4,ここまで------------------------------------------------------------------");
 
 		Bobble.main(args);
