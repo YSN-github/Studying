@@ -1,7 +1,7 @@
 package learn;
 
 public class Basic{
-    public static void main(String args[]){//UTF-8
+    public static void Ba(){
     System.out.println("学習する上でよく使う基本構文");
 
     line("文字の表示");
@@ -92,13 +92,13 @@ public class Basic{
        System.out.println(" int m = " + o);
     }
 
-    static void line(String a) {
+    public static void line(String a) {
     	System.out.println("");
     	System.out.println(a);
     	System.out.println("");
     }
 
-    static void end() {
+    public static void end() {
     	System.out.println("");
     	System.out.println("------------------------------------------");
     }

@@ -2,7 +2,7 @@ package learn;
 
 public class LearnInt {
 
-	public void main() {//static無しの場合はインスタンス
+	public void LI() {//static無しの場合はインスタンス要
 
 		Basic.line("シフト演算子(要再学習)");
 	    int g =30;

@@ -2,16 +2,20 @@ package learn;
 
 public class LearnClassAndMethod {
 
-	public static void main(String[] args) {
-		 //その他(他クラスから呼び出し)
-        //例：LearnString.main(args);【staticの場合はインスタンス不要】
-
-        //LearnInt test3 = new LearnInt();//static無しの場合は 【クラス 好きな変数名 = new クラス】
-        //test3.main();//上で生成したオブジェクト名.実行したいメソッド
+	public static void CAM() {
+		Basic.line("他クラスから呼び出し");
+        L.L1();//【staticの場合はインスタンス不要】
+        M m = new M();//static無しの場合は 【クラス 好きな変数名 = new クラス】
+        m.M1(); //上で生成したオブジェクト名.実行したいメソッド
+        Basic.end();
 
 		System.out.println("テスト4");
 		System.out.println(sub(2500));
-	}
+
+
+	    new A(33.66,139.75,10.0);
+		new A(38.25,137.65,12.0);
+		}
 
 		public static int sub(int x) {
 	    	int y= 250;
@@ -19,5 +23,25 @@ public class LearnClassAndMethod {
 	    	return z;
 
 	}
+}
+        class L {
+        	 static void L1() {
+        		System.out.println("これはLというクラスのL1というメソッドのものです。インスタンス操作不要");
+        	}
+        }
 
+        class M{
+        	 void M1() {
+        		System.out.println("これはMというクラスのM1というメソッドのものです。インスタンス操作必要");
+        	}
+        }
+
+		class A {
+
+		  A(double la, double lo, double he){//コンストラクタ
+
+			    System.out.println(la);
+			    System.out.println(lo);
+			    System.out.println(he);
+		    }
 }

@@ -1,24 +1,25 @@
 package learn;
 
 public class LearnString {
+	public static void LS() {
 
-	public static void main(String[] args) {
-	
-		System.out.println("この文はcrass/Test2、method/testにて作成された"); 
-		
-		//A c = 
-		new A(33.66,139.75,10.0);
-	    //A d = 
-	    new A(38.25,137.65,12.0); 
+		String a="0";
+		StringBuilder b = new StringBuilder();;
+
+		long x = System.currentTimeMillis();
+		for(int i =0;i<10000;i++) {
+			a = a+i;
 		}
+	    long z = System.currentTimeMillis();
+	    System.out.println("＋連結→"+(z - x)  + "ms");//10万だと4桁ms
+
+	    long x1 = System.currentTimeMillis();
+		for(int i =0;i<10000;i++) {
+			b.append(String.valueOf(i));
+		}
+	    long z1 = System.currentTimeMillis();
+	    System.out.println("Builder連結→"+(z1 - x1)  + "ms");//10万でも1桁ms
+
 	}
-	
-		class A {
-			
-			 A(double la, double lo, double he){
-		    
-			    System.out.println(la);
-			    System.out.println(lo);
-			    System.out.println(he);
-		    }
-		}
+
+}

@@ -6,27 +6,35 @@ import learn.LearnInt;
 import learn.LearnString;
 
 
-public class All_exe {
+public class All_exe {//UTF-8
 
 	public static void main(String[] args) {
 
-		Basic.main(args);
-		System.out.println("Test,ここまで--------------------------------------------------------------------------");
+		Basic.Ba();
+		ko("Basic");
+		Basic.end();
 
-		LearnString.main(args);
-		System.out.println("Test2,ここまで-----------------------------------------------------------------------");
+		LearnString.LS();
+		ko("LearnString");
+		Basic.end();
 
-		LearnInt test3=new LearnInt();
-		test3.main();
-		System.out.println("Test3,ここまで----------------------------------------------------------------------");
+		LearnInt test=new LearnInt();
+		test.LI();
+		ko("LearnInt");
+		Basic.end();
 
-		LearnClassAndMethod.main(args);
-		System.out.println("Test4,ここまで------------------------------------------------------------------");
+		LearnClassAndMethod.CAM();
+		ko("ClassAndMethod");
+		Basic.end();
 
-		Bobble.main(args);
-		System.out.println("Bobble,ここまで------------------------------------------------------------------");
+		Bobble.Bo();
+		ko("Bobble");
+		Basic.end();
 
 
+	}
+	public static void ko(String a) {
+		System.out.print(a+",ここまで");
 	}
 
 }
