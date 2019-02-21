@@ -34,7 +34,7 @@ public class All_exe {//UTF-8
 
 	}
 	public static void ko(String a) {
-		System.out.print(a+",ここまで");
+		System.out.print(a+",ここまで");//
 	}
 
 }

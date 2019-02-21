@@ -82,6 +82,12 @@ public class Basic{
           Basic.test(l,m);//クラス.メソッド名
           end();
 
+     line("文字・数字変換");
+     String n = "123";
+     System.out.println("String.valueOf(変数)→"+String.valueOf(n));
+     System.out.println("Integer.parseInt(変数)→"+Integer.parseInt(n));
+     end();
+
      }
 
 
