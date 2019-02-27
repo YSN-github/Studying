@@ -15,6 +15,8 @@ public class Advance{
     long b = System.currentTimeMillis();
     System.out.println((b - a)  + "ms");
     Basic.end();
+    
+    
 
     }
    }
