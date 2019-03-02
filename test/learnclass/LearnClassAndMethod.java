@@ -1,4 +1,5 @@
-package learn;
+package learnclass;
+import learn.Basic;
 
 public class LearnClassAndMethod {//本来は1ファイルに2クラスは非推奨。インスタンス操作必要の物が通常使われる。
 
@@ -32,8 +33,8 @@ public class LearnClassAndMethod {//本来は1ファイルに2クラスは非推
 	}
 }
 
-        class L {
-        	 static void L1() {
+         class L{
+			static void L1() {
         		System.out.println("これはLというクラスのL1というメソッドのものです。インスタンス操作不要");
         	}
         }

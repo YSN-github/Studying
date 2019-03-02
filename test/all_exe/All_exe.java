@@ -1,9 +1,9 @@
 package all_exe;
 import algorithm.Bobble;
 import learn.Basic;
-import learn.LearnClassAndMethod;
 import learn.LearnInt;
 import learn.LearnString;
+import learnclass.LearnClassAndMethod;
 
 
 public class All_exe {//UTF-8
